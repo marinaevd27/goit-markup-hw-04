@@ -53,6 +53,8 @@ img {
   padding: 24px 0;
 
   border-bottom: 1px solid var(--color-border);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-nav {
   display: flex;
@@ -144,6 +146,9 @@ img {
     url(../images/people-office\ 1-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  height: 600px;
 }
 
 .main-title {
@@ -197,8 +202,6 @@ img {
   border: 1px solid var(--color-button-white);
   border-radius: 4px;
   padding: 12px 24px;
-  
-  
 }
 .hero-buttons {
   display: flex;
@@ -212,8 +215,9 @@ img {
   background-color: var(--color-ocean-button);
   color: var(--color-button-white);
   border: 1px solid var(--color-ocean-button);
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Filters */
@@ -273,6 +277,7 @@ border-radius: 4px;
   justify-content: center;
   background-color: var(--color-cloud-logo);
   margin-bottom: 8px;
+  border-radius: 4px;
 }
 .section-1-icon {
   width: 64px;
@@ -342,7 +347,8 @@ border-radius: 4px;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   padding: 32px 16px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .team-description .team-item-text {
   margin-bottom: 8px;
@@ -360,12 +366,10 @@ border-radius: 4px;
   display: flex;
   justify-content: center;
   gap: 24px;
-  
 }
 .social-item {
   width: 40px;
   height: 40px;
-  
 }
 .team-social-link {
   display: flex;
@@ -448,6 +452,7 @@ border-radius: 4px;
 }
 .footer-primery {
   display: flex;
+  align-items: baseline;
 }
 .logo2 {
   font-family: "Raleway", sans-serif;
@@ -479,7 +484,6 @@ border-radius: 4px;
   letter-spacing: 0.02em;
   color: var(--color-cornflower-footer);
   width: 264px;
-  margin-right: 120px;
   margin-top: 16px;
 }
 .footer {
@@ -532,7 +536,8 @@ border-radius: 4px;
 }
 .site-nav:hover,
 .site-nav:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 0.08);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-img {
   display: block;
@@ -559,10 +564,8 @@ border-radius: 4px;
 }
 
 .footer-list-item {
-  display: flex;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
 }
 .footer-list-link {
   display: flex;
@@ -575,11 +578,11 @@ border-radius: 4px;
   border-radius: 50%;
 }
 
-.footer-list-item:hover,
-.footer-list-item:focus {
+.footer-list-link:hover,
+.footer-list-link:focus {
   background-color: var(--color-icon-footer);
 }
 .footer-list-icon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
